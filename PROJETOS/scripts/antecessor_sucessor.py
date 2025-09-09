@@ -1,0 +1,12 @@
+n1 = int(input('Por favor, digite um numero (N1):'))
+n2 = int(input('Por favor, digite novamente um número (N2):'))
+
+print("\t\t-----------------------------------------------------------------\\t")
+print("\t\t\t\tDados Obtidos conforme informações dadas:\t\t\t\t  ")
+print("\t\t-----------------------------------------------------------------\t\t")
+print("O ANTECESSOR DO PRIMEIRO NUMERO É:|{}|".format(n1 - 1))
+print("O SUCESSOR DO SEGUNDO NUMERO É: {}".format(n2 + 1))
+print("A SOMA: {}".format(n1 + n2))
+print("A EXPONENCIAÇÃO: {}".format(n1 ** n2))
+print("DIVISÃO INTEIRA: {}".format(n1 // n2))
+print("SUBTRAÇÃO DE N1 - N2: {}".format(n1 - n2)) 
