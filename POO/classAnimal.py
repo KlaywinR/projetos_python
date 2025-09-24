@@ -16,6 +16,7 @@ class Animal:
         f"Etnia:{self.etnia}\n"
         f"Altura:{self.altura }\n"
         )
+          
          
 animal01 = Animal("Preto",'ESCURA', 1.67, 66,99,'brasileira',)
 animal02 = Animal("Branco",'ESCURA', 1.67, 25,56,'brasileira',)
