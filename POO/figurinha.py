@@ -6,8 +6,6 @@ class Figurinha:
         self.dimensoes = dimensoes
         self.bordao = bordao
         
-        
-
 ## exibindo a figurinha   
 ##este método me retorna o tema, numero, dimensoes e o bordao do jogador.   
     def mostrar(self):
@@ -29,10 +27,10 @@ class Pacotinho:
     def adicionarFigurinha(self, figurinha): 
             self.figurinhas.append(figurinha)
             
-    ##o for vai percorrer cada elemento da lista e vai guardar em f
+    ##! for vai percorrer cada elemento da lista e vai guardar temporariamente em F:
     def listar(self):
         for f in self.figurinhas:
-            ##nesta parte ele imprime o elemento da lista presente em f
+            ##! impressao do elemento presente em f:
             print(f.mostrar())
 
 
@@ -47,7 +45,7 @@ class MinhaColecao:
         self.colecao.append(figurinha.numero)  
         
         
-    def FigurasFaltantes(self):
+    def figuras_faltantes(self):
         total = 10
         ##faz a diferenca das figuras, tais quais, imprime o total de figuras que faltam para colar:
         return total - len(self.colecao)  
@@ -101,7 +99,7 @@ colecao01.colar(figura03)
 ##colando as figurinhas:
 
 colecao01.colar(figura01)
-print("Ainda faltam colar: ", colecao01.FigurasFaltantes())
+print("Ainda faltam colar: ", colecao01.figuras_faltantes())
 
 ###########################################################################################################
 
