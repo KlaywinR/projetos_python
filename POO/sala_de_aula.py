@@ -13,8 +13,7 @@ class Aluno:
          ) 
          
     def foi_aprovado(self):
-##nao tem como comparar string com numero inteiro - por isso as aspas duplas.
-##se a nota for maior ou igual a 6 o aluno é aprovado; caso contrario - reprovado.
+##! se a nota for maior ou igual a 6 o aluno é aprovado; caso contrario - reprovado.
         if self.nota >= 6:
             print(f"Aluno:{self.nome} Aprovado!")
             return True
@@ -43,20 +42,23 @@ class Professor:
         
         
     def mediaTurma(self):
-        ##me retorna quantos alunos existem na lista:
+        ##! me retorna quantos alunos existem na lista:
         if len(self.discentes) == 0:
             return 0
-        ##percorre cada alino da lista e pega sua nota
+        ##! percorre cada alino da lista e pega sua nota:
         total = sum(aluno.nota for aluno in self.discentes)
-        ##neste caso, acima temos o sum - responsáve pela soma de nota dos discentes;
-        ## apos isso ele me retorna o total do vlor das notas e me faz a media - assim, me mandando a media da turma:
+        ##! neste caso, acima temos o sum - responsáve pela soma de nota dos discentes;
+        ##! apos isso ele me retorna o total do vlor das notas e me faz a media - assim, me mandando a media da turma:
         return total / len(self.discentes)
          
     def aprovados(self):
-        #cria  uma lista nova , percorre todos os discentes - tal qual, iclui somente os
-        # aprovados e me retorna a lsita de aprovados 
+        #! cria  uma lista nova , percorre todos os discentes - tal qual, iclui somente os
+        #! aprovados e me retorna a lsita de aprovados 
         return[aluno for aluno in self.discentes if aluno.foi_aprovado()]
     
+##! 
+##? 
+##*
 
 
 class Escolaa:
@@ -68,7 +70,7 @@ class Escolaa:
         
     def Relatorio(self):
         print("=== Relatório Geral da Escola ===")
-        #percorre os professores presentes na escola  - le a quant de discentes na liista e o valor e armazenado
+        #percorre os professores presentes na escola - le a quant de discentes na liista e o valor e armazenado
         #em quantdade de alunos; 
         for prof in self.professores:
             quantidade_alunos = len(prof.discentes)
