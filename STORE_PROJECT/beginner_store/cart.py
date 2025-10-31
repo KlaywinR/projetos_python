@@ -32,7 +32,7 @@ class Cart:
             for product, _ in self.itens:
                 if product not in vistos:
                     vistos.append(product)
-                return vistos 
+            return vistos 
             """
             Soma todos os subtotais usando a definição:
             subtotal = produto * quantidade
@@ -54,9 +54,8 @@ class Cart:
                 subtotal  = product * quantity
                 line = [product.name , f"Preço em Reais: {product.price:.2f}", quantity, f"R$ {subtotal:.2f}"]
                 lines.append(line)
-                return lines
-           
-##!------------------------------------------------ 
+            return lines
+ 
             """
             Retorna um novo carrinho com "produto" adicionado a quant.
             1 - Não altera o carrinho original
