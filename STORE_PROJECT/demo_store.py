@@ -2,6 +2,7 @@ from tabulate import tabulate
 from beginner_store.models import Product
 from beginner_store.cart import Cart
 
+
 def main():
     
     notebook = Product("Caderno Tilibra", 25.00)
@@ -27,7 +28,8 @@ def main():
     MyBaseCart += pencil
     MyBaseCart -= school_eraser
     
-##* MOSTRANDO O CAMINHO FINAL:
+    
+##* MOSTRANDO O CARRINHO FINAL:
 
     header = ["Products", "Prices", "Quantity", "SubTotal"]
     print(tabulate(MyCart3.table_lines(), headers=header, tablefmt="grid"))
