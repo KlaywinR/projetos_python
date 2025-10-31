@@ -2,7 +2,6 @@ from tabulate import tabulate
 from beginner_store.models import Product
 from beginner_store.cart import Cart
 
-
 def main():
     
     notebook = Product("Caderno Tilibra", 25.00)
@@ -14,28 +13,29 @@ def main():
     """
     promotion_notebook = notebook.discount(20)
 
-##** CARRINHO BASE:
+##** baseCart:
 
     MyBaseCart = Cart()
     MyBaseCart.add(notebook, 2)
     MyBaseCart.add(pencil,8)
     MyBaseCart.add(school_eraser, 10)
     
-##* TESTANDO OPERADORES:
+##* sobrecarga de operadores:
 
     MyCart2 = MyBaseCart + promotion_notebook
     MyCart3 = MyCart2 - pencil
     MyBaseCart += pencil
     MyBaseCart -= school_eraser
     
-    
-##* MOSTRANDO O CARRINHO FINAL:
+##* displaying the final cart:
 
     header = ["Products", "Prices", "Quantity", "SubTotal"]
     print(tabulate(MyCart3.table_lines(), headers=header, tablefmt="grid"))
     
     print("\nTotal carrinho 3: R$ {:.2f}".format(MyCart3.total()))
     print("Itens únicos carrinho 3:", [p.name for p in MyCart3.UniqueItens()])
+    
+    
 
 
 
