@@ -12,7 +12,7 @@ class Cart:
         def add(self, product, quantity=1):
             self.itens.append((product, quantity))
         
-            """
+            """]__
             Remove a primeira ocorrência de 'produto' em itens. 
             Se o produto aparecer varias vezes, apague a primeira e pare.
             """
@@ -55,6 +55,7 @@ class Cart:
                 line = [product.name , f"Preço em Reais: {product.price:.2f}", quantity, f"R$ {subtotal:.2f}"]
                 lines.append(line)
                 return lines
+           
 ##!------------------------------------------------ 
             """
             Retorna um novo carrinho com "produto" adicionado a quant.
