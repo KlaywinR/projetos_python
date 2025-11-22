@@ -11,12 +11,13 @@ class Eletric():
         print("A bateria do tesla de Demetrios está recebendo carga - (67% de 100%)")
         
     def eletric_engines(self):
-        print("Os motores do tesla de Demetrios estão sendo ligados - (OFF --> ON)")  
+        print("Os motores do tesla de Demetrios estão sendo ligados - (OFF --> ON)")
            
 class Car(Vehicle, Motorized):
     def move(self):
         print("O veiculo está se movendo nas ruas de Pau dos Ferros - RN")
-        print("Situação da Bicicleta: Em uso")
+        print("Situação do Veiculo: Em uso")
+        
         
 class CarEletric(Motorized, Vehicle, Eletric):
     def move(self):
