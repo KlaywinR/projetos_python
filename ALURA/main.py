@@ -4,7 +4,7 @@ class Employee:
         _cpf (str): CPF do funcionário.
         _wage (float): Salário do funcionário.
     """
-    def __init__(self, name, cpf, wage):
+    def __init__(self, name, cpf, wage=0):
         """Inicializa um funcionário com nome, CPF e salário."""
         self._name = name
         self._cpf = cpf
